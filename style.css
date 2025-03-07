@@ -1,0 +1,94 @@
+/* Apply gradient background */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #1e075f, #161033);
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+/* Stylish Title */
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    background: -webkit-linear-gradient(45deg, #ff416c, #007bff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Center clock container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Clock Design */
+.clock {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Background squares */
+.box {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    filter: blur(.5px);
+    z-index: -1;
+}
+
+.red {
+    background: #ff416c;
+    left: -60px;
+    top: -40px;
+}
+
+.blue {
+    background: #007bff;
+    right: -60px;
+    bottom: -40px;
+}
+
+/* Time Display Box */
+.time-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(255, 0, 150, 0.8), rgba(0, 204, 255, 0.8));
+    padding: 30px 60px;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    font-size: 5rem; /* Increased clock size */
+    color: #fff;
+    letter-spacing: 3px;
+}
+
+/* Individual time section */
+.time-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 15px;
+}
+
+/* Labels (HOURS, MINUTES, SECONDS) */
+.time-section p {
+    font-size: 1rem;
+    margin: 5px 0 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.7);
+}
